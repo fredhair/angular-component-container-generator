@@ -1,0 +1,15 @@
+{
+	"name": "container-component-generator",
+	"version": "0.1.0",
+	"description": "Used to create containers for components instead of running ng g c",
+	"author": "Danny Pendle",
+	"license": "GPL-2.0-or-later",
+	"main": "create-component.js",
+	"scripts": {
+		"ngc": "bash gencomponent.sh"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+	}
+}
