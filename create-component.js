@@ -35,9 +35,9 @@ const templateFiles = {
 };
 
 var buffer = fs.readFileSync(path.resolve(templatePath, templateFiles.componentTemplate));
-fs.writeFileSync(path.resolve(componentLocation, componentName + '-' + templateFiles.componentTemplate),
+fs.writeFileSync(path.resolve(componentLocation, componentName + '.' + templateFiles.componentTemplate),
   interpolateBuffer(buffer, { componentName }));
 
 buffer = fs.readFileSync(path.resolve(templatePath, templateFiles.componentClass));
-fs.writeFileSync(path.resolve(componentLocation, componentName + '-' + templateFiles.componentClass),
+fs.writeFileSync(path.resolve(componentLocation, componentName + '.' + templateFiles.componentClass),
   interpolateBuffer(buffer, { componentName, pascalComponentName }));
