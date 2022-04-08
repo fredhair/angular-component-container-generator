@@ -30,8 +30,8 @@ const pascalComponentName = toPascalCase(componentName);
 
 
 const templateFiles = {
-	componentTemplate: 'container.component.html',
-	componentClass: 'container.component.ts',
+	componentTemplate: 'container.html',
+	componentClass: 'container.ts',
 };
 
 var buffer = fs.readFileSync(path.resolve(templatePath, templateFiles.componentTemplate));
