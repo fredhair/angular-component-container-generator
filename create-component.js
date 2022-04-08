@@ -21,9 +21,9 @@ const nameFromPath = path => path.split('/').pop();
 const rootPath = argv[2] || exit(1);
 const componentPath = argv[3] || exit(1);
 
-const projectPath = path.resolve(rootPath, 'src/app');
+// const projectPath = path.resolve(rootPath, 'src/app');
 const templatePath = path.resolve(__dirname, 'templates');
-const componentLocation = path.resolve(projectPath, componentPath);
+const componentLocation = path.resolve(rootPath, componentPath);
 
 const componentName = nameFromPath(componentPath);
 const pascalComponentName = toPascalCase(componentName);
